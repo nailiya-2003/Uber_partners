@@ -198,7 +198,7 @@ h1 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 116px;
+  min-width: 116px;
   height: 116px;
   background: #1EACC7;
   border-radius: 100%;
@@ -236,6 +236,18 @@ h1 {
 .wrapper {
   display: block;
   margin-top: 40px;
+}
+.wrapper .wrapper_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 
 .text {
@@ -826,5 +838,16 @@ span {
     max-width: 90px;
     height: 30px;
     border-radius: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .subheader .official {
+    font-size: 20px;
+  }
+  .wrapper_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

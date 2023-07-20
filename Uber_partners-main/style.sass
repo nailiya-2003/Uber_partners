@@ -103,7 +103,6 @@ header
   text-transform: uppercase
   color: $main_color
   border: none
-
   +btn_color
 
 .partners_uber
@@ -172,7 +171,7 @@ h1
   -webkit-box-align: center
   -ms-flex-align: center
   align-items: center
-  width: 116px
+  min-width: 116px
   height: 116px
   background: $second_color
   border-radius: 100%
@@ -206,6 +205,11 @@ h1
 .wrapper
   display: block
   margin-top: 40px
+  .wrapper_items
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px
 
 .text
   font-weight: 300
@@ -631,6 +635,7 @@ span
       font-size: 12px
     .wrapper
       margin-top: 45px
+    
     .regtangle
       margin-top: 60px
     .benefits
@@ -686,6 +691,12 @@ span
         height: 30px
         border-radius: 13px
   
+@media (max-width: 991px) 
+  .subheader
+    .official
+      font-size: 20px
+  .wrapper_items
+     flex-direction: column
 
 
 
