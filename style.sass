@@ -16,6 +16,8 @@ header
   position: relative
   height: 53px
   background: #212121
+
+
   
 .menu
   display: -webkit-box
@@ -42,6 +44,15 @@ header
     text-decoration: none
     margin-right: 48px 
    
+.hamburger
+  display: none
+  position: absolute
+  right: 20px
+  top: 50%
+  transform: translate(-50%)
+  width: 26px
+  height: 9px
+  z-index: 9999999999
 .submit
   border-right: none
 
@@ -689,7 +700,49 @@ span
         max-width: 90px
         height: 30px
         border-radius: 13px
+
 @media (max-width: 991px) 
+  .hamburger
+      display: block
+      cursor: pointer
+      span
+        display: block
+        height: 2px
+        width: 100%
+        background-color: #fff
+        margin-bottom: 4px
+        transition: 0.5s all
+      &_active
+        span
+          margin-bottom: -2px
+          &:nth-child(1)
+            transform: rotate(-45deg)
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg)
+  .menu
+    position: fixed
+    width: 50%
+    height: 100vh
+    top: 0
+    left: -100%
+    display: block
+    display: flex
+    flex-direction: column
+    background-color: rgba(0, 0, 0, .8)
+    transition: 0.6s all
+    &_link
+      display: block
+      font-size: 25px
+      line-height: 34px
+    &_item
+      border-right: none
+      a
+        margin-right: 0
+        text-align: center
+  .menu_active
+    left: 0
   .subheader
     .official
       font-size: 9px
@@ -706,6 +759,7 @@ span
      .dollars_text, .round_text, .key_text, .location_text, .telephone, .car_text, .wallet_text, .second_text
        margin-top: 0
        margin-bottom: 30px
+
 @media (max-width: 890px) 
   .footer
     .maqazins 
@@ -719,5 +773,5 @@ span
     .car_choice_grid 
       img
         width: 100%
-
+@media (max-width: 890px) 
 
