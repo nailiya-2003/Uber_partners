@@ -842,12 +842,43 @@ span {
 }
 @media (max-width: 991px) {
   .subheader .official {
-    font-size: 20px;
+    font-size: 9px;
+  }
+  .wrapper_diagram {
+    margin-bottom: 50px;
+  }
+  .wrapper_location {
+    margin-bottom: 20px;
+  }
+  .wrapper_car {
+    margin-bottom: 20px;
   }
   .wrapper_items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .wrapper_items .text {
+    text-align: center;
+  }
+  .wrapper_items .dollars_text, .wrapper_items .round_text, .wrapper_items .key_text, .wrapper_items .location_text, .wrapper_items .telephone, .wrapper_items .car_text, .wrapper_items .wallet_text, .wrapper_items .second_text {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 890px) {
+  .footer .maqazins img {
+    max-width: 70px;
+    height: 25px;
+  }
+  .car_choice {
+    background-size: 100%;
+  }
+  .car_choice .car_choice_perfect {
+    font-size: 25px;
+  }
+  .car_choice .car_choice_grid img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
