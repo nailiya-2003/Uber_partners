@@ -1043,11 +1043,41 @@ span {
   }
 }
 @media (max-width: 575px) {
+  .container-fluid {
+    gap: 140px;
+  }
+  .car_choice .car_choice_grid img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .require_list li {
+    font-size: 13px;
+  }
+  .car_choice_grid .carsforeverydays {
+    font-size: 15px;
+  }
+  .link_info {
+    display: none;
+  }
   .partners_uber h1 {
+    font-size: 40px;
+    margin-top: 200px;
+  }
+  .invitation {
     font-size: 30px;
+    margin-top: 20px;
+  }
+  .icons {
+    gap: 30px;
+  }
+  .send {
+    margin-top: 100px;
   }
   .container {
     width: 100%;
+  }
+  .container .row {
+    gap: 30px;
   }
   .container .logo_img {
     margin-top: 30px;
@@ -1061,20 +1091,23 @@ span {
   .container .xs-visible {
     display: block;
     margin-top: 7px;
+    width: 100%;
   }
   .container .sbhdr {
     display: block;
     margin-top: 5px;
-    width: 135px;
+    max-width: 135px;
     font-size: 12px;
+    height: 35px;
   }
   .container .sbhdrmobile {
     display: none;
   }
   .container a {
-    text-decoration: none;
     text-align: end;
+    text-decoration: none;
     color: #fff;
+    font-size: 14px;
   }
   .container .xs-flex {
     display: -webkit-box;
@@ -1084,8 +1117,14 @@ span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container .invitation_text {
+    display: none;
+  }
+  .container .partners_uber h1 {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
