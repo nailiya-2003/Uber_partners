@@ -135,6 +135,10 @@ header {
   background-color: #1EACC7;
 }
 
+.sbhdrmobile {
+  display: none;
+}
+
 .partners_uber {
   min-height: 750px;
   background: url("img/uber_bg.png") center center/cover no-repeat;
@@ -863,22 +867,22 @@ span {
     width: 100%;
     background-color: #fff;
     margin-bottom: 4px;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
   }
   .hamburger_active span {
     margin-bottom: -2px;
   }
   .hamburger_active span:nth-child(1) {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
   }
   .hamburger_active span:nth-child(2) {
     display: none;
   }
   .hamburger_active span:nth-child(3) {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -webkit-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
   }
   .menu {
     position: fixed;
@@ -948,9 +952,61 @@ span {
     background-size: 100%;
   }
   .car_choice .car_choice_perfect {
-    font-size: 25px;
+    font-size: 30px;
   }
   .car_choice .car_choice_grid img {
+    width: 90%;
+  }
+}
+.require .app {
+  font-size: 30px;
+}
+
+.aroundtheworld_title {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .logo_img {
+    display: inline-block;
+  }
+  .logo_img img {
     width: 100%;
+  }
+  .sbhdrmobile {
+    display: block;
+    max-width: 172px;
+    height: 46px;
+    margin-top: 20px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4CE2FF));
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+  }
+  .sbhdr {
+    display: none;
+  }
+  .partners_uber h1 {
+    font-size: 35px;
+  }
+  .partners_uber .invitation {
+    font-size: 23px;
+  }
+  .invitation_text {
+    font-size: 13px;
+  }
+  .send {
+    height: 55px;
+    line-height: 50px;
+    font-size: 15px;
+    width: 220px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -115,7 +115,8 @@ header
   color: $main_color
   border: none
   +btn_color
-
+.sbhdrmobile
+  display: none
 .partners_uber
   min-height: 750px
   background: url("img/uber_bg.png") center center/cover no-repeat
@@ -711,16 +712,16 @@ span
         width: 100%
         background-color: #fff
         margin-bottom: 4px
-        transition: 0.5s all
+        transition: 0.3s all
       &_active
         span
           margin-bottom: -2px
           &:nth-child(1)
-            transform: rotate(-45deg)
+            transform: translateY(3px) rotate(-45deg)
           &:nth-child(2)
             display: none
           &:nth-child(3)
-            transform: rotate(45deg)
+            transform: translateY(3px) rotate(45deg)
   .menu
     position: fixed
     width: 50%
@@ -769,9 +770,46 @@ span
   .car_choice
     background-size: 100%
     .car_choice_perfect
-      font-size: 25px
+      font-size: 30px
     .car_choice_grid 
       img
-        width: 100%
-@media (max-width: 890px) 
-
+        width: 90%
+.require .app
+  font-size: 30px
+.aroundtheworld_title 
+  font-size: 30px
+@media (max-width: 767px)  
+  .logo_img
+    display: inline-block
+    img
+      width: 100%
+  .sbhdrmobile
+    display: block
+    max-width: 172px
+    height: 46px
+    margin-top: 20px
+    background: -webkit-gradient(linear, left bottom, left top, from($second_color), to(#4CE2FF))
+    background: linear-gradient(0deg,$second_color 0%, #4CE2FF 100%)
+    -webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    font-weight: 400
+    font-size: 14px
+    line-height: 40px
+    text-align: center
+    text-transform: uppercase
+    color: $main_color
+    border: none
+  .sbhdr
+    display: none
+  .partners_uber h1
+    font-size: 35px
+  .partners_uber .invitation 
+    font-size: 23px
+  .invitation_text 
+    font-size: 13px
+  .send
+    height: 55px
+    line-height: 50px
+    font-size: 15px
+    width: 220px
