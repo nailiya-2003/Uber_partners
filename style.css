@@ -793,70 +793,6 @@ span {
   }
 }
 @media (max-width: 1200px) {
-  .send {
-    font-size: 16px;
-    width: 220px;
-  }
-  .mobile_app .app {
-    font-size: 30px;
-  }
-  .mobile_app .subtitle_app {
-    font-size: 14px;
-  }
-  .mobile_app .mobile_app_item {
-    min-height: 250px;
-  }
-  .mobile_app .mobile_app_item .mobile_subtitle {
-    font-size: 18px;
-  }
-  .partners_uber h1 {
-    font-size: 37px;
-  }
-  .partners_uber .invitation {
-    font-size: 30px;
-  }
-  .menu_link {
-    display: none;
-  }
-  .subheader {
-    height: 90px;
-  }
-  .subheader .logo_img, .subheader .subheader_call, .subheader .sbhdr {
-    margin-top: 20px;
-  }
-  .subheader .numphone {
-    font-size: 15px;
-  }
-  .subheader .sbhdr {
-    font-size: 13px;
-    line-height: 20px;
-    padding: 8px;
-  }
-  .require_title {
-    font-size: 20px;
-  }
-  .require_list li {
-    font-size: 16px;
-  }
-  .footer .main {
-    font-size: 12px;
-  }
-  .footer .main_text {
-    text-decoration: none;
-  }
-  .footer .center {
-    font-size: 9px;
-  }
-  .footer .center_text {
-    text-decoration: none;
-  }
-  .footer .maqazins img {
-    max-width: 90px;
-    height: 30px;
-    border-radius: 13px;
-  }
-}
-@media (max-width: 991px) {
   .hamburger {
     display: block;
     cursor: pointer;
@@ -914,8 +850,72 @@ span {
     margin-right: 0;
     text-align: center;
   }
+  .send {
+    font-size: 16px;
+    width: 220px;
+  }
+  .mobile_app .app {
+    font-size: 30px;
+  }
+  .mobile_app .subtitle_app {
+    font-size: 14px;
+  }
+  .mobile_app .mobile_app_item {
+    min-height: 250px;
+  }
+  .mobile_app .mobile_app_item .mobile_subtitle {
+    font-size: 18px;
+  }
+  .partners_uber h1 {
+    font-size: 37px;
+  }
+  .partners_uber .invitation {
+    font-size: 30px;
+  }
   .menu_active {
     left: 0;
+  }
+  .subheader {
+    height: 90px;
+  }
+  .subheader .logo_img, .subheader .subheader_call, .subheader .sbhdr {
+    margin-top: 20px;
+  }
+  .subheader .numphone {
+    font-size: 15px;
+  }
+  .subheader .sbhdr {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 8px;
+  }
+  .require_title {
+    font-size: 20px;
+  }
+  .require_list li {
+    font-size: 16px;
+  }
+  .footer .main {
+    font-size: 12px;
+  }
+  .footer .main_text {
+    text-decoration: none;
+  }
+  .footer .center {
+    font-size: 9px;
+  }
+  .footer .center_text {
+    text-decoration: none;
+  }
+  .footer .maqazins img {
+    max-width: 90px;
+    height: 30px;
+    border-radius: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .menu_link {
+    font-size: 20px;
   }
   .subheader .official {
     font-size: 9px;
@@ -967,6 +967,9 @@ span {
 }
 
 @media (max-width: 767px) {
+  .menu_link {
+    font-size: 15px;
+  }
   .logo_img {
     display: inline-block;
   }
@@ -1008,5 +1011,30 @@ span {
     line-height: 50px;
     font-size: 15px;
     width: 220px;
+  }
+  .regtangle {
+    width: 110px;
+    height: 25px;
+  }
+  .reason, .mobile_app .app {
+    font-size: 27px;
+  }
+  .car_choice .car_choice_perfect, .aroundtheworld_title, .require .app {
+    font-size: 27px;
+  }
+  .car_choice_text, .aroundtheworld_text {
+    font-size: 15px;
+  }
+  .require .regtangle_text {
+    width: 110px;
+    height: 25px;
+  }
+  .aroundtheworld .cities {
+    width: 75px;
+    height: 25px;
+    font-size: 15px;
+  }
+  .main {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
