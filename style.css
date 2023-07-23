@@ -1037,4 +1037,9 @@ span {
   .main {
     display: none;
   }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
